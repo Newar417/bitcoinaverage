@@ -82,7 +82,7 @@ CURRENCY_LIST = ('USD',
 
                  # 'CZK',
                  # 'DKK',
-                 # 'THB',
+                 'THB',
                     )
 
 # http://www.currencysymbols.in/
@@ -108,6 +108,7 @@ FRONTEND_CURRENCY_SYMBOLS = {
         'HKD': ['0024'],
         'RON': [],
         'MXN': [],
+        'THB': ['0e3f'],
         }
 
 BITCOIN_CHARTS_API_URL = 'https://api.bitcoincharts.com/v1/markets.json'
@@ -200,6 +201,7 @@ EXCHANGE_LIST = {
 #                                    },
                     'kraken':  {'usd_ticker_url': 'https://api.kraken.com/0/public/Ticker?pair=XBTUSD',
                                 'eur_ticker_url': 'https://api.kraken.com/0/public/Ticker?pair=XBTEUR',
+                                'krw_ticker_url': 'https://api.kraken.com/0/public/Ticker?pair=XBTKRW',
                                 'URL': 'https://kraken.com/',
                                 'display_name': 'Kraken',
                                     },
@@ -317,6 +319,23 @@ EXCHANGE_LIST = {
                                   'URL': 'https://coinfloor.co.uk/',
                                   'display_name': 'Coinfloor',
                                   },
+                    'bitcoinexchangethailand': {'ticker_url': 'https://exchange.bitcoin.co.th/api/trade/?pairing_id=1',
+                                  'URL': 'https://exchange.bitcoin.co.th/',
+                                  'display_name': 'Bitcoin Exchange Thailand',
+                                  },
+                    'lakebtc': {'ticker_url': 'https://www.LakeBTC.com/api_v1/ticker',
+                                'URL': 'https://lakebtc.com/',
+                                'display_name': 'LakeBTC',
+                                },
+                    'hitbtc': {'usd_ticker_url': 'http://api.hitbtc.com/api/1/public/BTCUSD/ticker',
+                               'eur_ticker_url': 'http://api.hitbtc.com/api/1/public/BTCEUR/ticker',
+                               'URL': 'https://hitbtc.com/',
+                               'display_name': 'hitbtc',
+                               },
+                    'korbit': {'ticker_url': 'https://api.korbit.co.kr/v1/ticker/detailed',
+                               'URL': 'https://www.korbit.co.kr/',
+                               'display_name': 'Korbit',                                  
+                               },
 
 #EXCHANGES RECEIVED THROUGH BITCOINCHARTS
                     'btceur': {'bitcoincharts_symbols': {'EUR': 'btceurEUR',
@@ -332,10 +351,26 @@ EXCHANGE_LIST = {
                     'anx_hk':  {'bitcoincharts_symbols': {'USD': 'anxhkUSD',
                                                           'HKD': 'anxhkHKD',
                                                           'CNY': 'anxhkCNY',
+                                                          'AUD': 'anxhkAUD',
+                                                          'CAD': 'anxhkCAD',
+                                                          'CHF': 'anxhkCHF',
+                                                          'EUR': 'anxhkEUR',
+                                                          'GBP': 'anxhkGBP',
+                                                          'JPY': 'anxhkJPY',
+                                                          'NZD': 'anxhkNZD',
+                                                          'SDG': 'anxhkSGD',
                                                            },
                                 'URL': 'https://anxbtc.com/',
                                 'display_name': 'ANXBTC',
-                                 },
+                                  },
+                    'bitalo':  {'bitcoincharts_symbols': {'EUR': 'bitaloEUR',
+                                                          'GBP': 'bitaloGBP',
+                                                          'PLN': 'bitaloPLN',
+                                                          'USD': 'bitaloUSD',
+                                                          },
+                                'URL': 'https://www.bitalo.com/',
+                                'display_name': 'Bitalo',
+                                  },
 
 
 #EXCHANGES IGNORED

@@ -83,6 +83,7 @@ CURRENCY_LIST = ('USD',
                  # 'CZK',
                  # 'DKK',
                  'THB',
+                 'KRW',
                     )
 
 # http://www.currencysymbols.in/
@@ -94,7 +95,7 @@ FRONTEND_CURRENCY_SYMBOLS = {
         'CAD': ['0024'],
         'PLN': ['007a', '0142'],
         #'JPY': ['00a5'],
-        'RUB': [],
+        'RUB': [], #from June or so (Unicode 7.0): '20bd'
         'AUD': ['0024'],
         'SEK': ['006b', '0072'],
         'BRL': ['0052', '0024'],
@@ -103,12 +104,13 @@ FRONTEND_CURRENCY_SYMBOLS = {
         'ZAR': ['0052'],
         'NOK': ['006b', '0072'],
         'ILS': ['20aa'],
-        'CHF': [],
-        'TRY': [],
+        'CHF': ['0043, 0048, 0046],
+        'TRY': ['20a4'],
         'HKD': ['0024'],
-        'RON': [],
-        'MXN': [],
+        'RON': ['006c, 0065, 0069'],
+        'MXN': ['0024'],
         'THB': ['0e3f'],
+        'KRW': ['20a9']
         }
 
 BITCOIN_CHARTS_API_URL = 'https://api.bitcoincharts.com/v1/markets.json'
